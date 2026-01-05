@@ -1,48 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio – Taco Berg</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f5f5f5;
-      color: #222;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .project {
-      background: white;
-      padding: 20px;
-      margin-top: 30px;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
 
-  <h1>Taco Berg – Portfolio</h1>
-  <p>
-    Student met interesse in UX, Product Ownership en ethische technologie.
-  </p>
+    <header class="nav">
+      <a class="brand" href="index.html">
+        <span class="dot"></span>
+        <span>Taco Berg</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#projecten">Projecten</a>
+        <a href="#over">Over mij</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <div class="project">
-    <h2>Dark Tech Project</h2>
-    <p>
-      Een project waarin ik onderzocht hoe dark patterns gebruikers beïnvloeden
-      en hoe ontwerp ethischer kan worden ingezet.
-    </p>
-    <p>
-      <strong>Rol:</strong> UX Researcher / Designer
-    </p>
-    <p>
-      <strong>Skills:</strong> UX research, analyse, ethisch ontwerp
-    </p>
-    <a href="dark-tech.html">Bekijk project →</a>
+    <section class="hero">
+      <h1>Portfolio</h1>
+      <p>
+        Student met interesse in <b>Product Ownership</b>, UX en ethische technologie.
+        Ik vertaal onderzoek en inzichten naar concrete oplossingen.
+      </p>
+      <div class="pills">
+        <span class="pill">Productdenken</span>
+        <span class="pill">UX / Research</span>
+        <span class="pill">Agile / Scrum</span>
+        <span class="pill">Ethisch ontwerp</span>
+      </div>
+    </section>
+
+    <section id="projecten" class="section">
+      <h2>Projecten</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="cover"></div>
+          <div class="content">
+            <h3>Dark Tech Project</h3>
+            <p>
+              Onderzoek naar dark patterns en het ontwerpen van ethischere alternatieven.
+              Inclusief analyse, inzichten en reflectie.
+            </p>
+            <div class="tags">
+              <span class="tag">UX Research</span>
+              <span class="tag">Ethics</span>
+              <span class="tag">Analyse</span>
+            </div>
+            <div style="margin-top:14px">
+              <a class="btn" href="dark-tech.html">Bekijk project →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="cover"></div>
+          <div class="content">
+            <h3>Volgend project</h3>
+            <p>Voeg later je volgende beste project toe. Kwaliteit > kwantiteit.</p>
+            <div class="tags">
+              <span class="tag">Skill</span>
+              <span class="tag">Tool</span>
+              <span class="tag">Impact</span>
+            </div>
+            <div style="margin-top:14px">
+              <a class="btn" href="#">Binnenkort →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="over" class="section">
+      <h2>Over mij</h2>
+      <p>
+        Schrijf hier 3–6 zinnen over wie je bent, wat je zoekt en waar je sterk in bent.
+        Tip: noem ook je stage-ambitie (Product Owner).
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:">jouwmail@voorbeeld.nl</a><br/>
+        LinkedIn: <a href="#">link hier</a><br/>
+        GitHub: <a href="#">link hier</a>
+      </p>
+    </section>
+
+    <div class="footer">© <span id="year"></span> Taco Berg</div>
   </div>
 
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
