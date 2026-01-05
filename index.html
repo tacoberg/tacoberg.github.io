@@ -11,7 +11,7 @@
 
     <header class="nav">
       <a class="brand" href="index.html">
-        <span class="dot"></span>
+        <span class="logo">TB</span>
         <span>Taco Berg</span>
       </a>
       <nav class="navlinks">
@@ -22,16 +22,24 @@
     </header>
 
     <section class="hero">
-      <h1>Portfolio</h1>
-      <p>
-        Student met interesse in <b>Product Ownership</b>, UX en ethische technologie.
-        Ik vertaal onderzoek en inzichten naar concrete oplossingen.
-      </p>
-      <div class="pills">
-        <span class="pill">Productdenken</span>
-        <span class="pill">UX / Research</span>
-        <span class="pill">Agile / Scrum</span>
-        <span class="pill">Ethisch ontwerp</span>
+      <div class="hero-inner">
+        <h1>Portfolio</h1>
+        <p>
+          Student met interesse in <b>Product Ownership</b>, UX en ethische technologie.
+          Ik vertaal onderzoek en inzichten naar concrete productkeuzes en heldere oplossingen.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projecten">Bekijk projecten →</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+
+        <div class="pills">
+          <span class="pill">Productdenken</span>
+          <span class="pill">UX / Research</span>
+          <span class="pill">Agile / Scrum</span>
+          <span class="pill">Ethisch ontwerp</span>
+        </div>
       </div>
     </section>
 
@@ -40,7 +48,11 @@
 
       <div class="grid">
         <article class="card">
-          <div class="cover"></div>
+          <div class="cover">
+            <span class="badge">Case study</span>
+            <!-- optioneel: voeg een afbeelding toe in assets/ -->
+            <img src="assets/darktech-hero.jpg" alt="" onerror="this.style.display='none'">
+          </div>
           <div class="content">
             <h3>Dark Tech Project</h3>
             <p>
@@ -59,17 +71,16 @@
         </article>
 
         <article class="card">
-          <div class="cover"></div>
+          <div class="cover">
+            <span class="badge">Coming soon</span>
+          </div>
           <div class="content">
             <h3>Volgend project</h3>
-            <p>Voeg later je volgende beste project toe. Kwaliteit > kwantiteit.</p>
+            <p>Voeg later je volgende beste project toe. Kwaliteit &gt; kwantiteit.</p>
             <div class="tags">
-              <span class="tag">Skill</span>
-              <span class="tag">Tool</span>
-              <span class="tag">Impact</span>
-            </div>
-            <div style="margin-top:14px">
-              <a class="btn" href="#">Binnenkort →</a>
+              <span class="tag">Stakeholders</span>
+              <span class="tag">Backlog</span>
+              <span class="tag">Roadmap</span>
             </div>
           </div>
         </article>
@@ -78,10 +89,34 @@
 
     <section id="over" class="section">
       <h2>Over mij</h2>
-      <p>
-        Schrijf hier 3–6 zinnen over wie je bent, wat je zoekt en waar je sterk in bent.
-        Tip: noem ook je stage-ambitie (Product Owner).
-      </p>
+
+      <div class="split">
+        <div>
+          <p>
+            Ik ben Taco en ik werk graag op het snijvlak van <b>gebruikersbehoeften</b>, <b>business</b> en <b>tech</b>.
+            Ik vind het leuk om problemen scherp te definiëren en vervolgens samen met een team naar een concrete oplossing te werken.
+          </p>
+          <p>
+            Ik zoek kansen om door te groeien richting <b>(Junior) Product Owner</b> en bouw aan een portfolio met projecten
+            waarin ik research, analyse en productdenken laat zien.
+          </p>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi">
+            <b>Focus</b>
+            <span>Product Ownership • UX • Ethiek</span>
+          </div>
+          <div class="kpi">
+            <b>Werkstijl</b>
+            <span>Structuur, duidelijkheid, samenwerken</span>
+          </div>
+          <div class="kpi">
+            <b>Tools</b>
+            <span>Figma • Miro • Notion/Jira</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="section">
